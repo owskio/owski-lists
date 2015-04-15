@@ -1,0 +1,17 @@
+{
+  "name": "owski-lists",
+  "version": "0.0.1",
+  "description": "list homomorphisms",
+  "main": "lists.js",
+  "scripts": {
+    "test": "mocha tests/*.mocha.js"
+  },
+  "keywords": [
+    "reduce",
+    "map",
+    "each",
+    "all"
+  ],
+  "author": "Ted Cackowski Jr",
+  "license": "MIT"
+}
