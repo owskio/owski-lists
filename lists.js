@@ -1,12 +1,10 @@
 
 var expose = require('owski-expose');
-require('owski-apply').mport(function(apply){
-require('./primitives').mport(function(and,hasOwnProperty){
+require('owski-primitives').mport(function(and,hasOwnProperty){
 require('owski-curry').mport(function(curry,applyStrict,arrayFunction){
   var
   reverse = function(arr){
-    var theReverse = Array.prototype.reverse;
-    return apply(theReverse,arr,[]);
+    return arr.reverse();
   },
   reduce = curry(function(acc,fn,list){
     for(var i in list){
@@ -19,8 +17,7 @@ require('owski-curry').mport(function(curry,applyStrict,arrayFunction){
   reduceBools   = reduce(false),
   all = reduceBools(and),
   push = curry(function(i,t){
-    var thePush = Array.prototype.push;
-    apply(thePush,i,[t]);
+    i.push(t);
     return i;
   }),
   map = curry(function(fn,obj){
@@ -58,4 +55,4 @@ require('owski-curry').mport(function(curry,applyStrict,arrayFunction){
     push: push
   });
 
-});});});
+});});

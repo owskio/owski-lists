@@ -1,7 +1,7 @@
 
 require('must');
-require('../primitives').mport(function(add){
-require('../lists').mport(function(each,map,head,eachOwn,rest,reduceStrings,reverse){
+require('owski-primitives').mport(function(add){
+require('owski-lists').mport(function(each,map,head,eachOwn,rest,reduceStrings,reverse){
   describe('Lists',function(){
     it('map should work for arrays',function(){
       map(function(i){
