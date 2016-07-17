@@ -1,6 +1,6 @@
 {
   "name": "owski-lists",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "list homomorphisms",
   "main": "lists.js",
   "scripts": {
